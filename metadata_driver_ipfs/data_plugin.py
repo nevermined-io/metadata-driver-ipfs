@@ -19,7 +19,13 @@ class Plugin(AbstractPlugin):
     def upload(self, local_file, remote_file):
         pass
 
+    def upload_bytes(self, file_content, file_name='file'):
+        pass
+
     def download(self, remote_file, local_file):
+        pass
+
+    def download_bytes(self, cid_url, attempts=3, try_ipfs=True):
         pass
 
     def list(self, remote_folder):

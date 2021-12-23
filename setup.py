@@ -15,7 +15,7 @@ with open('HISTORY.md') as history_file:
 # or pip install -e .
 install_requirements = [
     'coloredlogs',
-    'nevermined-metadata-driver-interface==0.1.4',
+    'nevermined-metadata-driver-interface>=0.3.0',
 ]
 
 # Required to run setup.py:
@@ -41,12 +41,12 @@ setup(
     author="nevermined-io",
     author_email='root@nevermined.io',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     description="💧 Metadata IPFS Data Driver Implementation",
     extras_require={
@@ -65,6 +65,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/nevermined-io/metadata-driver-ipfs',
-    version='0.1.0',
+    version='0.1.1',
     zip_safe=False,
 )
